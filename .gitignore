@@ -1,0 +1,2 @@
+# excludes the database files from being tracked due to their size (over GitHub's limits)
+cog-24*
