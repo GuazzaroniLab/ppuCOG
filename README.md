@@ -12,7 +12,7 @@ The repository is composed 3 main R scripts:
 - `utils.R` : this script contains a heper function for parsing the COG functions file.
 - `ppuCog.tsv` : the final plain-text table relating genomic loci to COG annotations for _P. putida_ KT2440.
 
-## Using this repo for other organisms
+## Obtaining COGs of other organisms
 Since the entirety of the COG database is downloaded and processed when running these scripts, it is possible to generate a plain-text COG table for virtually any organism deposited in RefSeq using the `database.R` script.
 To do so, replace _P. putida_'s genome assembly ID to the target organism's ID in line 33 of the script (please see below). The packages `DBI`, `dplyr` and `readr`, are required for running this script.
 
@@ -20,7 +20,7 @@ To do so, replace _P. putida_'s genome assembly ID to the target organism's ID i
 gene2cog <- DBI::dbGetQuery(cog24, "
         SELECT GENE_ID, COG_ID
         FROM 'cog'
-        WHERE ASSEMBLY_ID = 'GCF_000007565.2' # edit this line to change the target organism
+        WHERE ASSEMBLY_ID = 'GCF_000007565.2' -- edit this line to change the target organism
       ")
 ```
 
