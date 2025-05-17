@@ -30,7 +30,7 @@ DBI::dbListTables(cog24)
 gene2cog <- DBI::dbGetQuery(cog24, "
         SELECT GENE_ID, COG_ID
         FROM 'cog'
-        WHERE ASSEMBLY_ID = 'GCF_000007565.2'
+        WHERE ASSEMBLY_ID = 'GCF_000007565.2' -- edit this line to change the target organism
       ")
 
 cogfunctions <- DBI::dbGetQuery(cog24, "SELECT * FROM 'cog.fun'")
