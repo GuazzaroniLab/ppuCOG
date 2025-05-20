@@ -2,7 +2,7 @@
 
 The COG database provides functional protein annotations based on groups conserved across multiple genomes ([Tatusov, 1997](https://www.science.org/doi/10.1126/science.278.5338.631)). COGs are useful in larger genomic studies, and the database has been greatly expanded over the next decades
 
-This repository provides a handy way or accessing the most recent version of the COG annotations ([COG 2024](https://www.ncbi.nlm.nih.gov/research/cog/)), and provides a pre-formatted table for one of the model organisms I used in my PhD, _Pseudomonas putida_ KT2440, as a plain text table.
+This repository provides a handy way or accessing the most recent version of the COG annotations ([COG 2024](https://www.ncbi.nlm.nih.gov/research/cog/)), and provides a pre-formatted table for the model organism _Pseudomonas putida_ KT2440 as a plain text table.
 
 ## Repository structure
 
@@ -26,4 +26,4 @@ gene2cog <- DBI::dbGetQuery(cog24, "
 ```
 
 ## Information
-If you have any questions or feedback, please feel free to contact me at gmvsiq@gmail.com
+If you have any questions or feedback, please feel free to contact the repo maintainer Guilherme (Gui) Viana de Siqueira at gmvsiq@gmail.com.
